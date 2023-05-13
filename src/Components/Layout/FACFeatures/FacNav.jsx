@@ -25,7 +25,7 @@ const Fac = () => {
   };
 
   // firebase auth
-  const signInWithGoogle = () => {
+  
     signInWithPopup(auth, provider)
       .then((result) => {
         const name = result.user.displayName;
@@ -37,7 +37,7 @@ const Fac = () => {
       .catch((error) => {
         console.log(error);
       });
-  };
+  
 
   const logoutHandler = () => {
     dispatch(authActions.logout());
